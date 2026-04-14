@@ -180,3 +180,23 @@ h3 { font-size: 1.2rem; }
   .section { padding: 4rem 0; }
   .card, .contact-card { padding: 1.2rem; }
 }
+.project-grid-detailed {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.post-card h3 {
+  margin-bottom: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .project-grid-detailed,
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+}
